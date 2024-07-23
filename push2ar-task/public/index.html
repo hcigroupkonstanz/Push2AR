@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Push2AR</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script>
+        function redirectTo(stage) {
+            const participantId = document.getElementById('participantId').value;
+            const page = stage === 'tutorial1' | 'tutorial2' ? 'tutorial-description' : 'task-description';
+            if (!participantId || !stage) {
+                alert('Please enter a participant ID.');
+                return;
+            }
+            window.location.href = `/${page}?participantId=${encodeURIComponent(participantId)}&stage=${stage}&condition=${document.getElementById('condition').value}`;
+        }
+
+        const sequences = [
+            ['tutorial1', 'tutorial2', 'task1', 'task2', 'task3', 'task4'],
+            ['tutorial1', 'tutorial2', 'task1', 'task2', 'task3', 'task4'],
+            ['tutorial2', 'tutorial1', 'task2', 'task4', 'task1', 'task3'],
+            ['tutorial2', 'tutorial1', 'task2', 'task4', 'task1', 'task3'],
+            ['tutorial1', 'tutorial2', 'task4', 'task3', 'task2', 'task1'],
+            ['tutorial1', 'tutorial2', 'task4', 'task3', 'task2', 'task1'],
+            ['tutorial2', 'tutorial1', 'task3', 'task1', 'task4', 'task2'],
+            ['tutorial2', 'tutorial1', 'task3', 'task1', 'task4', 'task2']
+        ]
+
+        function updateCondition() {
+            const participantId = document.getElementById('participantId').value;
+            let conditionSelect = document.getElementById('condition');
+            let selectedCondition = conditionSelect.value;
+
+            // Check if participant ID is odd
+            if (participantId % 2 !== 0) {
+                if (selectedCondition !== 'control') {
+                    conditionSelect.value = 'control'; // Set condition to control if participant ID is odd
+                }
+            } else {
+                if (selectedCondition !== 'push2ar') {
+                    conditionSelect.value = 'push2ar'; // Set condition to push2ar if participant ID is even
+                }
+            }
+        }
+
+        function updateTaskOrder() {
+            const participantId = parseInt(document.getElementById('participantId').value);
+            const stageSelect = document.getElementById('stage');
+
+            stageSelect.innerHTML = ''; // Clear existing options
+
+            const sequenceIndex = (participantId - 1) % sequences.length; // Adjust for participant ID starting at 1
+            const sequence = sequences[sequenceIndex];
+
+            sequence.forEach((stage) => {
+                const option = document.createElement('option');
+                option.value = stage;
+                option.text = stage.charAt(0).toUpperCase() + stage.slice(1).replace(/[0-9]/g, ' $&'); // Beautify stage name
+                stageSelect.appendChild(option);
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h1>Study Push2AR</h1>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="participantId" placeholder="Enter participant ID"
+                        oninput="updateCondition(); updateTaskOrder();">
+                </div>
+                <!-- Dropdown to select start condition (Push2AR, Control), if particiapntId is odd select control, else push2AR -->
+                <div class="mb-3">
+                    <select class="form-select" id="condition">
+                        <option value="push2ar">Push2AR</option>
+                        <option value="control">Control</option>
+                    </select>
+                </div>
+                <!-- Dropdown to select stage (tutorial, task1, task2, task3, task4, task5, task6)-->
+                <div class="mb-3">
+                    <select class="form-select" id="stage">
+                        <option value="tutorial1">Tutorial 1</option>
+                        <option value="task1">Task 1</option>
+                        <option value="task2">Task 2</option>
+                        <option value="task3">Task 3</option>
+                        <option value="tutorial2">Tutorial 2</option>
+                        <option value="task4">Task 4</option>
+                        <option value="task5">Task 5</option>
+                        <option value="task6">Task 6</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <!-- Redirect to tutorial-description or task-description based on the selected stage -->
+                    <button type="button" class="btn btn-primary"
+                        onclick="redirectTo(document.getElementById('stage').value)">Start Session</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471DB8282B7522AC00B8ECAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DB8272B7522AC00B8ECAA /* AppDelegate.swift */; };
+		471DB82C2B7522AC00B8ECAA /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 471DB82A2B7522AC00B8ECAA /* Main.html */; };
+		471DB82E2B7522AC00B8ECAA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 471DB82D2B7522AC00B8ECAA /* Icon.png */; };
+		471DB8302B7522AC00B8ECAA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 471DB82F2B7522AC00B8ECAA /* Style.css */; };
+		471DB8322B7522AC00B8ECAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DB8312B7522AC00B8ECAA /* SceneDelegate.swift */; };
+		471DB8342B7522AC00B8ECAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DB8332B7522AC00B8ECAA /* ViewController.swift */; };
+		471DB8372B7522AC00B8ECAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471DB8352B7522AC00B8ECAA /* LaunchScreen.storyboard */; };
+		471DB83A2B7522AC00B8ECAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471DB8382B7522AC00B8ECAA /* Main.storyboard */; };
+		471DB8422B7522AF00B8ECAA /* Push2AR Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 471DB8412B7522AF00B8ECAA /* Push2AR Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		471DB8472B7522AF00B8ECAA /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DB8462B7522AF00B8ECAA /* SafariWebExtensionHandler.swift */; };
+		471DB84A2B7522AF00B8ECAA /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 471DB8492B7522AF00B8ECAA /* _locales */; };
+		471DB84C2B7522AF00B8ECAA /* images in Resources */ = {isa = PBXBuildFile; fileRef = 471DB84B2B7522AF00B8ECAA /* images */; };
+		471DB84E2B7522AF00B8ECAA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 471DB84D2B7522AF00B8ECAA /* manifest.json */; };
+		471DB85A2B7522AF00B8ECAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471DB83B2B7522AE00B8ECAA /* Assets.xcassets */; };
+		47BB19732BE52B7F00272B4B /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 47BB19722BE52B7F00272B4B /* dist */; };
+		47BB19782BE52FC000272B4B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 47BB19772BE52FC000272B4B /* public */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		471DB8432B7522AF00B8ECAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471DB81C2B7522AC00B8ECAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 471DB8402B7522AF00B8ECAA;
+			remoteInfo = "Push2AR Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		471DB8602B7522AF00B8ECAA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				471DB8422B7522AF00B8ECAA /* Push2AR Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		471DB8242B7522AC00B8ECAA /* Push2AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push2AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471DB8272B7522AC00B8ECAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		471DB82B2B7522AC00B8ECAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		471DB82D2B7522AC00B8ECAA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		471DB82F2B7522AC00B8ECAA /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		471DB8312B7522AC00B8ECAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		471DB8332B7522AC00B8ECAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		471DB8362B7522AC00B8ECAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		471DB8392B7522AC00B8ECAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		471DB83B2B7522AE00B8ECAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		471DB83C2B7522AE00B8ECAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471DB8412B7522AF00B8ECAA /* Push2AR Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Push2AR Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		471DB8462B7522AF00B8ECAA /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		471DB8492B7522AF00B8ECAA /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		471DB84B2B7522AF00B8ECAA /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		471DB84D2B7522AF00B8ECAA /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		471DB8592B7522AF00B8ECAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BB19722BE52B7F00272B4B /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
+		47BB19772BE52FC000272B4B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		471DB8212B7522AC00B8ECAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471DB83E2B7522AF00B8ECAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		471DB81B2B7522AC00B8ECAA = {
+			isa = PBXGroup;
+			children = (
+				471DB8262B7522AC00B8ECAA /* Push2AR */,
+				471DB8452B7522AF00B8ECAA /* Push2AR Extension */,
+				471DB8252B7522AC00B8ECAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		471DB8252B7522AC00B8ECAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				471DB8242B7522AC00B8ECAA /* Push2AR.app */,
+				471DB8412B7522AF00B8ECAA /* Push2AR Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471DB8262B7522AC00B8ECAA /* Push2AR */ = {
+			isa = PBXGroup;
+			children = (
+				471DB8272B7522AC00B8ECAA /* AppDelegate.swift */,
+				471DB8312B7522AC00B8ECAA /* SceneDelegate.swift */,
+				471DB8332B7522AC00B8ECAA /* ViewController.swift */,
+				471DB8352B7522AC00B8ECAA /* LaunchScreen.storyboard */,
+				471DB8382B7522AC00B8ECAA /* Main.storyboard */,
+				471DB83B2B7522AE00B8ECAA /* Assets.xcassets */,
+				471DB83C2B7522AE00B8ECAA /* Info.plist */,
+				471DB8292B7522AC00B8ECAA /* Resources */,
+			);
+			path = Push2AR;
+			sourceTree = "<group>";
+		};
+		471DB8292B7522AC00B8ECAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				471DB82A2B7522AC00B8ECAA /* Main.html */,
+				471DB82D2B7522AC00B8ECAA /* Icon.png */,
+				471DB82F2B7522AC00B8ECAA /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		471DB8452B7522AF00B8ECAA /* Push2AR Extension */ = {
+			isa = PBXGroup;
+			children = (
+				471DB8462B7522AF00B8ECAA /* SafariWebExtensionHandler.swift */,
+				471DB8592B7522AF00B8ECAA /* Info.plist */,
+				471DB8482B7522AF00B8ECAA /* Resources */,
+			);
+			path = "Push2AR Extension";
+			sourceTree = "<group>";
+		};
+		471DB8482B7522AF00B8ECAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47BB19772BE52FC000272B4B /* public */,
+				471DB8492B7522AF00B8ECAA /* _locales */,
+				471DB84B2B7522AF00B8ECAA /* images */,
+				471DB84D2B7522AF00B8ECAA /* manifest.json */,
+				47BB19722BE52B7F00272B4B /* dist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		471DB8232B7522AC00B8ECAA /* Push2AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471DB8612B7522AF00B8ECAA /* Build configuration list for PBXNativeTarget "Push2AR" */;
+			buildPhases = (
+				471DB8202B7522AC00B8ECAA /* Sources */,
+				471DB8212B7522AC00B8ECAA /* Frameworks */,
+				471DB8222B7522AC00B8ECAA /* Resources */,
+				471DB8602B7522AF00B8ECAA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				471DB8442B7522AF00B8ECAA /* PBXTargetDependency */,
+			);
+			name = Push2AR;
+			productName = Push2AR;
+			productReference = 471DB8242B7522AC00B8ECAA /* Push2AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		471DB8402B7522AF00B8ECAA /* Push2AR Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471DB85D2B7522AF00B8ECAA /* Build configuration list for PBXNativeTarget "Push2AR Extension" */;
+			buildPhases = (
+				471DB83D2B7522AF00B8ECAA /* Sources */,
+				471DB83E2B7522AF00B8ECAA /* Frameworks */,
+				471DB83F2B7522AF00B8ECAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Push2AR Extension";
+			productName = "Push2AR Extension";
+			productReference = 471DB8412B7522AF00B8ECAA /* Push2AR Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		471DB81C2B7522AC00B8ECAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					471DB8232B7522AC00B8ECAA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					471DB8402B7522AF00B8ECAA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 471DB81F2B7522AC00B8ECAA /* Build configuration list for PBXProject "Push2AR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 471DB81B2B7522AC00B8ECAA;
+			productRefGroup = 471DB8252B7522AC00B8ECAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				471DB8232B7522AC00B8ECAA /* Push2AR */,
+				471DB8402B7522AF00B8ECAA /* Push2AR Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		471DB8222B7522AC00B8ECAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471DB82E2B7522AC00B8ECAA /* Icon.png in Resources */,
+				471DB83A2B7522AC00B8ECAA /* Main.storyboard in Resources */,
+				471DB8372B7522AC00B8ECAA /* LaunchScreen.storyboard in Resources */,
+				471DB82C2B7522AC00B8ECAA /* Main.html in Resources */,
+				471DB85A2B7522AF00B8ECAA /* Assets.xcassets in Resources */,
+				471DB8302B7522AC00B8ECAA /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471DB83F2B7522AF00B8ECAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BB19782BE52FC000272B4B /* public in Resources */,
+				47BB19732BE52B7F00272B4B /* dist in Resources */,
+				471DB84C2B7522AF00B8ECAA /* images in Resources */,
+				471DB84E2B7522AF00B8ECAA /* manifest.json in Resources */,
+				471DB84A2B7522AF00B8ECAA /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471DB8202B7522AC00B8ECAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471DB8342B7522AC00B8ECAA /* ViewController.swift in Sources */,
+				471DB8282B7522AC00B8ECAA /* AppDelegate.swift in Sources */,
+				471DB8322B7522AC00B8ECAA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471DB83D2B7522AF00B8ECAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471DB8472B7522AF00B8ECAA /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		471DB8442B7522AF00B8ECAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 471DB8402B7522AF00B8ECAA /* Push2AR Extension */;
+			targetProxy = 471DB8432B7522AF00B8ECAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		471DB82A2B7522AC00B8ECAA /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471DB82B2B7522AC00B8ECAA /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		471DB8352B7522AC00B8ECAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471DB8362B7522AC00B8ECAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		471DB8382B7522AC00B8ECAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471DB8392B7522AC00B8ECAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		471DB85B2B7522AF00B8ECAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		471DB85C2B7522AF00B8ECAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		471DB85E2B7522AF00B8ECAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANE9U9HE65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Push2AR Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Push2AR Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kn.uni.hci.Push2AR.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		471DB85F2B7522AF00B8ECAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANE9U9HE65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Push2AR Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Push2AR Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kn.uni.hci.Push2AR.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		471DB8622B7522AF00B8ECAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANE9U9HE65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Push2AR/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Push2AR;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kn.uni.hci.Push2AR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		471DB8632B7522AF00B8ECAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANE9U9HE65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Push2AR/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Push2AR;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kn.uni.hci.Push2AR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		471DB81F2B7522AC00B8ECAA /* Build configuration list for PBXProject "Push2AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471DB85B2B7522AF00B8ECAA /* Debug */,
+				471DB85C2B7522AF00B8ECAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471DB85D2B7522AF00B8ECAA /* Build configuration list for PBXNativeTarget "Push2AR Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471DB85E2B7522AF00B8ECAA /* Debug */,
+				471DB85F2B7522AF00B8ECAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471DB8612B7522AF00B8ECAA /* Build configuration list for PBXNativeTarget "Push2AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471DB8622B7522AF00B8ECAA /* Debug */,
+				471DB8632B7522AF00B8ECAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 471DB81C2B7522AC00B8ECAA /* Project object */;
+}

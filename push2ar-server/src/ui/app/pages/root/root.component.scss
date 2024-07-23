@@ -1,0 +1,97 @@
+@import '../../../sass/nord.scss';
+
+:host {
+    position: relative;
+
+    display: grid;
+    grid-template-rows: [padding] 10px [header] 80px [main] 1fr;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    .header {
+        grid-row: header;
+
+        $margin: 20px;
+        margin-left: $margin;
+        margin-right: $margin;
+
+        width: calc(100% - #{$margin * 2});
+        height: 100%;
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+
+            img {
+                height: 100%;
+                width: 100px;
+            }
+
+            h1 {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        .tabs {
+            $tab-width: 100px;
+
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 20px;
+
+            font-weight: bold;
+
+            a {
+                width: $tab-width;
+                text-align: center;
+            }
+
+            a.active {
+                color: $nord9;
+            }
+
+            .active-indicator {
+                position: absolute;
+                bottom: 0;
+                height: 6px;
+                width: $tab-width;
+                background-color: $nord9;
+                border-radius: 10px;
+
+                transition: left 0.3s;
+            }
+        }
+    }
+
+    .content {
+        grid-row: main;
+        background-color: $nord0;
+
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+
+        position: relative;
+    }
+}

@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.select {
+    width: 400px
+}
+
+.select ::ng-deep .p-dropdown {
+    width: 100%;
+}

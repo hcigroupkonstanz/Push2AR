@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TechTrove</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card-title {
+            font-size: 1.45rem;
+        }
+
+        .card-text {
+            font-size: 1.45rem;
+            color: black;
+        }
+
+        .star-rating {
+            color: #ffc107;
+            font-size: 1.45rem;
+        }
+
+        .nav-item {
+            font-size: 1.4rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.4rem;
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .img-fluid {
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto;
+            object-fit: contain;
+        }
+
+        .btn {
+            font-size: 1.1rem;
+        }
+
+        body {
+            padding-top: 56px;
+            /* Height of the navbar */
+        }
+
+        /* CSS to remove blue color and underline from links */
+        .card a {
+            color: black;
+            /* Change link color to black */
+            text-decoration: none;
+            /* Remove underline from links */
+        }
+
+        .card-subtitle {
+            font-size: 1.3rem;
+        }
+
+        .checkout-footer {
+            position: sticky;
+            bottom: 0;
+            background-color: white;
+            /* Match the shopping cart background */
+            padding: 10px 0;
+            /* Add some padding */
+            border-top: 1px solid #eaeaea;
+            /* Add a border line for better separation, optional */
+        }
+
+        .shopping-cart {
+            padding-top: 56px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-right: 32px;
+            width: 100vw;
+            height: 100%;
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+            background-color: white;
+            display: none;
+        }
+
+        .unclickable-link {
+            pointer-events: none;
+            color: inherit;
+            /* Optional: makes it look like regular text */
+            text-decoration: none;
+            /* Optional: removes the underline */
+        }
+
+        .cart-header {
+            position: sticky;
+            top: 0;
+            background-color: white; /* Match the background of the shopping cart for a seamless look */
+            z-index: 100; /* Ensure it stays above other content */
+            border-bottom: 1px solid #eaeaea; /* Optional: adds a subtle line to visually separate the header from the content */
+        }
+    </style>    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechTrove</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleCart()">
+                        <i class="bi bi-cart"></i> Cart (<span id="cart-total-nav">$0</span>) <span id="cart-badge"
+                            class="badge bg-primary">0</span>
+                    </a>
+                </li>
+                <!-- Hidden Close Cart Button -->
+                <li class="nav-item" id="close-cart-nav-item" style="display: none;">
+                    <a class="nav-link" href="#" onclick="toggleCart()">
+                        <i class="bi bi-x"></i> Close Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="product-container" class="container m-0 g-0"><!-- Products will be loaded here --></div>
+    <div id="shopping-cart" class="shopping-cart">
+        <div class="container m-0 g-0">
+            <div class="col-12">
+                <div class="cart-header">
+                    <div class="row">
+                        <div class="col-6 mt-2">
+                            <h4 class="m-2">Shopping Cart</h4>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <h4 id="cart-total" class="text-end m-2 mt-2">$0</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart items -->
+                <div class="row">
+                    <div class="col-12">
+                        <div id="cart-items" class="container m-0 g-0">
+                            <!-- Cart items will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Checkout button footer -->
+                <div class="checkout-footer m-2">
+                    <button class="btn btn-primary btn-lg w-100" onclick="completeCheckout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

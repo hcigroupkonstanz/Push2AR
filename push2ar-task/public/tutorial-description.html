@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tutorial Description</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .text-description {
+            font-size: 1.4rem;
+        }
+
+        .btn {
+            font-size: 1.4rem;
+        }
+
+        .task-highlight {
+            font-weight: bold;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 1.4rem;
+        }
+    </style>
+    <script>
+        function startTutorial() {
+            // Extract participant ID and other necessary parameters from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const participantId = urlParams.get('participantId');
+            const condition = urlParams.get('condition');
+            const stage = urlParams.get('stage');
+
+            // Redirect to the task page, including the participant ID and task number in the query string
+            window.location.href = `/tutorial?participantId=${encodeURIComponent(participantId)}&condition=${encodeURIComponent(condition)}&stage=${encodeURIComponent(stage)}`;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-8">
+                <h1 class="text-left mb-4">Task Description</h1>
+                <p class="text-description"><span class="task-highlight">Objective:</span> Your task is to buy the three cheapest products from each of the following categories: headphones, smartwatches, chargers. Ensure that every product you choose has a minimum rating of 3 stars.</p>
+                <p class="text-description"><span class="task-highlight">Execution:</span> Please solve the task as fast as possible. As soon as you have found all products, tap on the checkout button in the shopping cart to complete the task.</p>
+                <p class="text-description"><span class="task-highlight">Key Points to Remember:</span></p>
+                <ul>
+                    <li>Add the three cheapest products from each category to the shopping cart, i.e., 9 products in total.</li>
+                    <li>Add only products with a 3-star rating or higher to the shopping cart.</li>
+                    <li>Solve the task as accurately and quickly as possible.</li>
+                    <li>Tap on the checkout button in the shopping cart to complete the task.</li>
+                </ul>
+                <div class="text-center m-4">
+                    <button type="button" class="btn btn-primary" onclick="startTutorial()">Start Task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
